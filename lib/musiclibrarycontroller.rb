@@ -87,6 +87,8 @@ class MusicLibraryController
     user_input = gets.strip.to_i
     if user_input < 1 || user_input > @@numbered_list_all_songs.size
       puts "Not a valid input. Please enter a number from 1 to #{@@numbered_list_all_songs.size}"
+    else
+      puts "Playing #{@@numbered_list_all_songs[user_input - 1].name} by #{@@numbered_list_all_songs[user_input - 1].artist.name}"
     #binding.pry
   end
 
