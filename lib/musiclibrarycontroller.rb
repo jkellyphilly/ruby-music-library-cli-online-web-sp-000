@@ -89,6 +89,7 @@ class MusicLibraryController
       puts "Not a valid input. Please enter a number from 1 to #{@@numbered_list_all_songs.size}"
     else
       puts "Playing #{@@numbered_list_all_songs[user_input - 1].name} by #{@@numbered_list_all_songs[user_input - 1].artist.name}"
+    end
     #binding.pry
   end
 
