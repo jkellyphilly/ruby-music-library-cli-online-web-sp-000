@@ -85,6 +85,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     user_input = gets.strip.to_i
+    if user_input < 1 || user_input > @@numbered_list_all_songs.size
     #binding.pry
   end
 
