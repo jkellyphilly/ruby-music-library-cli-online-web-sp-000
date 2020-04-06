@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-  @@numbered_list
+  @@numbered_list_all_songs = []
 
   def initialize(path = "./db/mp3s")
     music_importer = MusicImporter.new(path)
