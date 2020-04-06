@@ -31,6 +31,7 @@ class MusicLibraryController
     sorted_songs = Song.all.sort_by {|song| song.name}
     sorted_songs.each do |song|
       puts "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      @@numbered_list_all_songs << song
       counter += 1
     end
   end
